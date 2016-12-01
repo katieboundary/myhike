@@ -1,0 +1,11 @@
+<% if session[:user_id] != nil %>
+  <a href="/">home</a>
+  <form method="post" action="/sessions/:id">
+    <input type="hidden" name="_method" value='delete'>
+    <input type="submit" value="log out">
+  </form>
+<% else %>
+  <a href="/users/new">Register</a>
+  <a href="/sessions/new">Login</a>
+  <a href="/">Home</a>
+<%end%>

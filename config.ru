@@ -1,4 +1,3 @@
-require 'pry'
 require 'yaml'
 
 # Require config/environment.rb

@@ -1,4 +1,6 @@
-<h1>Search by city:</h1>
+<br>
+<br>
+<h1 id="search">Search by city:</h1>
 
 <form action="/trails" method="post">
 
@@ -9,15 +11,16 @@
   </div>
 
   <input type="text" name="city" placeholder="City">
-  <button type="submit">submit</button>
+  <button class="button" type="submit">submit</button>
 </form>
 
+
 <% if @api_response && @api_response['places'] %>
-  <ul>
   <% @api_response['places'].each do |place| %>
-    <li>
+    <p>
     <%=place['name']%>
-    </li>
+    </p>
   <%end%>
-  </ul>
+
 <%end%>
+

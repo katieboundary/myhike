@@ -5,9 +5,52 @@
   border: 1px dotted black;
 }
 th {
-  text-align: left;
+  text-align: center;
 }
 
 div.error {
   color: red;
 }
+
+body {
+    background-image: url("purple-mountains.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #ffffe6;
+}
+
+ul {
+    width: 70%;
+    margin: auto;
+}
+
+a {
+  color: #ffffe6;
+}
+
+.button {
+  background-color: #2a2a6f;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 12px;
+}
+
+#search {
+  font-size: 60px;
+}
+
+#welcome {
+  font-size: 60px;
+}
+
+#hello {
+  font-size: 40px;
+
+}
+

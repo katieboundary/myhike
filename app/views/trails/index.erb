@@ -1,0 +1,23 @@
+<h1>Search by city:</h1>
+
+<form action="/trails" method="post">
+
+  <div class="error">
+    <% if @error %>
+      <%= @error %>
+    <% end %>
+  </div>
+
+  <input type="text" name="city" placeholder="City">
+  <button type="submit">submit</button>
+</form>
+
+<% if @api_response && @api_response['places'] %>
+  <ul>
+  <% @api_response['places'].each do |place| %>
+    <li>
+    <%=place['name']%>
+    </li>
+  <%end%>
+  </ul>
+<%end%>

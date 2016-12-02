@@ -18,6 +18,12 @@ gem 'rake'
 gem 'shotgun'
 
 gem 'bcrypt'
+gem 'unirest'
+
+group :test, :development do
+  gem 'pry'
+  gem 'byebug'
+end
 
 group :test do
   gem 'rspec'
